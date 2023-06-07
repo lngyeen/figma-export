@@ -3,7 +3,6 @@ import Foundation
 import Logging
 
 enum FigmaExportError: LocalizedError {
-    
     case invalidFileName(String)
     case stylesNotFound
     case componentsNotFound
@@ -31,8 +30,7 @@ enum FigmaExportError: LocalizedError {
 
 @main
 struct FigmaExportCommand: ParsableCommand {
-    
-    static let version = "0.37.1"
+    static let version = "0.37.2"
     
     static let svgFileConverter = VectorDrawableConverter()
     static let fileWriter = FileWriter()
